@@ -1,0 +1,14 @@
+print("welcom to our Gym!")
+x=input("Enter your name: ")
+with open("gym.txt" , "a") as f: f.write(x + "\n")
+k = int(input("Enter your age: ")) 
+if k < 16: print("sorry, you are too young!")
+else: n = input("Do you want to join our gym? (y/n): ")
+if n == "y":
+  print("Choose your membership:")
+  print("1 - monthly")
+  print("2 - yearly")
+  m = input("Enter your choice: ")
+  if m == "1": print("your membership is yearly")
+  else: print("Thank you for visiting us!")
+ 
